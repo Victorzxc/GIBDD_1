@@ -1,0 +1,27 @@
+﻿<Window x:Class="GIBDD_1.AddViolationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавить нарушение" Height="470" Width="300">
+    <StackPanel Margin="10">
+        <Label Content="Водитель:"/>
+        <ComboBox x:Name="DriverComboBox" DisplayMemberPath="LastName" SelectionChanged="DriverComboBox_SelectionChanged"/>
+        <Label Content="Автомобиль:"/>
+        <ComboBox x:Name="VehicleComboBox" DisplayMemberPath="RegistrationNumber"/>
+        <Label Content="Код нарушения:"/>
+        <TextBox x:Name="ViolationCodeTextBox"/>
+        <Label Content="Тип нарушения:"/>
+        <TextBox x:Name="ViolationTypeIdTextBox"/>
+        <Label Content="Место:"/>
+        <TextBox x:Name="LocationTextBox"/>
+        <Label Content="Размер штрафа:"/>
+        <TextBox x:Name="FineAmountTextBox"/>
+        <Label Content="Офицер:"/>
+        <ComboBox x:Name="OfficerComboBox" DisplayMemberPath="LastName"/>
+        <Label Content="Статус оплаты:"/>
+        <TextBox x:Name="PaymentStatusTextBox"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <Button x:Name="SaveButton" Content="Сохранить" Click="SaveButton_Click" Margin="0,0,5,0"/>
+            <Button x:Name="CancelButton" Content="Отмена" Click="CancelButton_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

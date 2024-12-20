@@ -1,0 +1,21 @@
+﻿<Window x:Class="GIBDD_1.AddAccidentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         Title="Добавить ДТП" Height="350" Width="300">
+    <StackPanel Margin="10">
+        <Label Content="Дата и время:"/>
+        <TextBox x:Name="DateTimeTextBox"/>
+        <Label Content="Место:"/>
+        <TextBox x:Name="LocationTextBox"/>
+        <Label Content="Описание:"/>
+        <TextBox x:Name="DescriptionTextBox"/>
+        <Label Content="ID офицера:"/>
+        <TextBox x:Name="OfficerIdTextBox"/>
+        <Label Content="ID правила:"/>
+        <TextBox x:Name="RuleIdTextBox"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <Button x:Name="SaveButton" Content="Сохранить" Click="SaveButton_Click" Margin="0,0,5,0"/>
+            <Button x:Name="CancelButton" Content="Отмена" Click="CancelButton_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

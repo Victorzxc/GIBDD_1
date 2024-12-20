@@ -1,0 +1,9 @@
+*.mdf
+*.ldf
+*.bak
+*.suo
+*.user
+*.csproj.user
+/bin
+/obj
+packages/
